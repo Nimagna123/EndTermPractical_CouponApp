@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Swastik Colors</string>
+    <string name="login">Login</string>
+    <string name="loading">LOADING</string>
+    <string name="select_your_language">Select Your Language</string>
+    <string name="save">SAVE</string>
+    <string name="please_enter_your_mobile_number_to_proceed">Please enter your mobile number to proceed</string>
+    <string name="your_number">Your number</string>
+    <string name="next">NEXT</string>
+    <string name="enter_otp_here">Enter OTP Here</string>
+    <string name="please_enter_the_otp_sent_to">Please enter the OTP sent to your number</string>
+    <string name="verify">VERIFY</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="please_enter_your_name_to_proceed">Please enter your name to proceed</string>
+    <string name="logout">Logout</string>
+    <string name="title_loan">Loan</string>
+    <string name="title_me">ME</string>
+    <string name="error">Error!!!</string>
+    <string name="documents">Documents</string>
+    <string name="product">Product</string>
+    <string name="eligibility">Eligibility Criteria</string>
+    <string name="loanAmount">Loan Amount</string>
+    <string name="tenure">Tenure</string>
+    <string name="interest">Interest Rate</string>
+    <string name="refer">REFER</string>
+    <string name="placeOrder">Place Order</string>
+    <string name="financial_product">Financial Product</string>
+    <string name="consumer_durable_product">Consumer Durable Product</string>
+    <string name="name">Name</string>
+    <string name="orderFor">Order For</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="pincode">Pincode</string>
+    <string name="orderThankYou">Thank you for your order.\nWe will contact you shortly.\nYour order number </string>
+    <string name="customerDetails">Customer Details</string>
+    <string name="orderNumber">Order Number</string>
+    <string name="myProfile">My Profile</string>
+    <string name="updateProfile">Update Profile</string>
+    <string name="successfullyUpdated">Successfully Updated!!!</string>
+    <string name="myOrderHistory">My Order History</string>
+    <string name="product2">Product :</string>
+    <string name="order_number">Order Number : </string>
+    <string name="orderDate">Order Date : </string>
+    <string name="name2">Name : </string>
+    <string name="phoneNumber2">Phone Number : </string>
+    <string name="pincode2">Pincode : </string>
+    <string name="orderStatus">Order Status : </string>
+    <string name="changeLanguage">Change Language</string>
+    <string name="updatePincode">Update Pincode</string>
+    <string name="fillThis">Fill This!!!</string>
+    <string name="pincodeSixDigit">Pincode must be of 6 digit.</string>
+    <string name="phoneNumberTenDigit">Phone Number must be of 10 digit</string>
+    <string name="aboutUs">About Us</string>
+    <string name="productDetails">Product Details</string>
+    <string name="months">Months</string>
+    <string name="emiAmount">EMI Amount</string>
+    <string name="price">Price</string>
+    <string name="tenure2">Tenure : </string>
+    <string name="emiAmount2">EMI Amount : </string>
+    <string name="price2">Price : </string>
+    <string name="contactUs">Contact Us</string>
+    <string name="noServiceMessage">We do not serve at your current location. Please update your location.</string>
+    <string name="processingFees">Processing Fees</string>
+    <string name="product_category">Product Category</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Hindi</item>
+    </string-array>
+    <string-array name="placeOrderFor">
+        <item>Self</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="languagesMapper">
+        <item>en</item>
+        <item>hi</item>
+    </string-array>
+    <string-array name="placeOrderForMapper">
+        <item>Self</item>
+        <item>Others</item>
+    </string-array>
+</resources>

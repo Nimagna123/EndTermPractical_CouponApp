@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.Login.SignUp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/signUpMessage"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/please_enter_your_name_to_proceed"
+        android:textColor="#000000"
+        android:textSize="@dimen/h4_text_size" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpMessage"
+        android:layout_alignStart="@+id/signUpMessage"
+        android:layout_marginEnd="40dp"
+        android:hint="@string/enter_your_name" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:enabled="true"
+        android:onClick="signUp"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>

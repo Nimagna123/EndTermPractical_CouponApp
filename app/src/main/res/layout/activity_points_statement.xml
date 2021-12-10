@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    tools:context=".Activity.Home.PointsStatement">
+
+    <include android:id="@+id/header2"
+        layout="@layout/layout_basic_header"/>
+
+    <LinearLayout
+        android:id="@+id/currentPointLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/header2"
+        android:layout_margin="@dimen/normal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Point : "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/h4_text_size"/>
+
+        <TextView
+            android:id="@+id/currentPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/h4_text_size"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentPointLayout"
+        android:layout_margin="@dimen/normal_margin"
+        android:background="@drawable/round_button_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Points Statement"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h4_text_size"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/round_button_orange"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/points_statement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normal_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+</RelativeLayout>

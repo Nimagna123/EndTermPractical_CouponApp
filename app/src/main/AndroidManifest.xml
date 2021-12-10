@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.swastikcolors.couponApp">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.Home.Product.ProductCategory"></activity>
+        <activity android:name=".Activity.Me.LocateUs" />
+        <activity android:name=".Activity.Me.ContactUs" />
+        <activity android:name=".Activity.Me.AboutUs" />
+        <activity android:name=".Activity.Home.RedeemGiftHistory" />
+        <activity android:name=".Activity.Home.GiftCatalogue.RedeemGift" />
+        <activity android:name=".Activity.Home.GiftCatalogue.GiftDescription" />
+        <activity android:name=".Activity.Home.GiftCatalogue.GiftCatalogue" />
+        <activity android:name=".Activity.Home.PointsStatement" />
+        <activity android:name=".Activity.Login.SignUp" />
+        <activity android:name=".Activity.Login.OTPLogin" />
+        <activity android:name=".Activity.Home.RedeemCoupon" />
+        <activity android:name=".Activity.Home.Product.ProductDescription" />
+        <activity android:name=".Activity.Home.Product.Products" />
+        <activity android:name=".Activity.Home.PersonalProfile" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.HomeScreen" />
+        <activity android:name=".Activity.Login.Login" />
+        <activity android:name=".Activity.Login.StartLoginButton" />
+    </application>
+
+</manifest>

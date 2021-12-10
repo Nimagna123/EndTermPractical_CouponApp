@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".Activity.Login.Login">
+
+    <include android:id="@+id/header2"
+        layout="@layout/layout_basic_header"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header2"
+        android:layout_margin="@dimen/large_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/employeeLoginMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:text="Scan or enter the coupon code from the sticker in the tin "
+                android:textColor="#000000"
+                android:textSize="@dimen/h5_text_size" />
+
+            <Button
+                android:id="@+id/scanCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding"
+                android:layout_marginTop="25dp"
+                android:enabled="true"
+                android:onClick="scanCoupon"
+                android:text="Scan Coupon"
+                android:textColor="#000000"
+                app:cornerRadius="0dp" />
+
+            <TextView
+                android:id="@+id/orMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:padding="@dimen/normal_padding"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textSize="@dimen/h5_text_size" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/couponCodeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Enter Coupon Code"
+                app:boxStrokeWidthFocused="1dp"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/couponCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/redeemCouponBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/large_margin"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:enabled="true"
+        android:onClick="redeemCoupon"
+        android:text="Redeem Coupon"
+        android:textColor="#ffffff"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>

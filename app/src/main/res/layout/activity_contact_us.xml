@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.Me.ContactUs">
+
+    <include android:id="@+id/header2"
+        layout="@layout/layout_basic_header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header2"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/dynamicLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/large_margin"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

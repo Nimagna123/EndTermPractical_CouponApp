@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Home.GiftCatalogue.RedeemGift">
+
+    <include
+        android:id="@+id/header2"
+        layout="@layout/layout_basic_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_below="@+id/header2"
+        android:layout_above="@+id/placeOrder"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/customerDetails"
+            android:padding="@dimen/large_margin">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                app:boxStrokeWidthFocused="1dp"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/receiverName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phoneNumber"
+                app:boxStrokeWidthFocused="1dp"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/receiverPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pincodeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pincode"
+                app:boxStrokeWidthFocused="1dp"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:counterEnabled="true"
+                app:counterMaxLength="6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/receiverPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:background="@null"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                app:boxStrokeWidthFocused="1dp"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/receiverAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:inputType="text"
+                    android:background="@null"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/placeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:onClick="redeemGift"
+        android:text="Redeem Gift"
+        android:layout_margin="10dp"
+        app:cornerRadius="10dp"
+        android:padding="@dimen/large_padding"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

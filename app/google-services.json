@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "658336479127",
+    "firebase_url": "https://swastik-colors.firebaseio.com",
+    "project_id": "swastik-colors",
+    "storage_bucket": "swastik-colors.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658336479127:android:d8c388870a74147a0a76d2",
+        "android_client_info": {
+          "package_name": "com.swastikcolors.couponApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658336479127-tknpru9jqpim8sh3isgmq1aj77i07t71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swastikcolors.couponApp",
+            "certificate_hash": "7bfd24b2f15f1dc059feabcc8a8771bb2b9291c7"
+          }
+        },
+        {
+          "client_id": "658336479127-i2bi1uj3mtkp2068907ej9e9su5mbobd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiVUtAePZqJMguw5gh3y0vindA5gk6rSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658336479127-i2bi1uj3mtkp2068907ej9e9su5mbobd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
